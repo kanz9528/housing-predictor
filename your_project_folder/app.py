@@ -15,7 +15,7 @@ if not os.path.exists(MODEL_PATH):
     st.info("Training model for the first time...")
 
     # Load dataset
-    df = pd.read_csv("Housing.csv")  # Make sure Housing.csv is in the same folder
+    df = pd.read_csv(r"Housing.csv")  # Make sure Housing.csv is in the same folder
 
     # Select features and target
     X = df[['area', 'bedrooms', 'bathrooms', 'stories']]
