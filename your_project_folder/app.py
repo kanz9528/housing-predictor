@@ -1,4 +1,17 @@
 import streamlit as st
+import os
+import pandas as pd
+
+st.write("📂 Current directory:", os.getcwd())
+st.write("📄 Files:", os.listdir())
+
+if not os.path.exists("Housing.csv"):
+    st.error("❌ File 'Housing.csv' not found.")
+    st.stop()
+
+df = pd.read_csv("Housing.csv")
+st.success("✅ File loaded successfully!")
+import streamlit as st
 import pandas as pd
 import joblib
 from sklearn.linear_model import LinearRegression
