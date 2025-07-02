@@ -5,11 +5,11 @@ import pandas as pd
 st.write("📂 Current directory:", os.getcwd())
 st.write("📄 Files:", os.listdir())
 
-if not os.path.exists("your_project_folder/Housing.csv"):
+if not os.path.exists("Housing.csv"):
     st.error("❌ File 'Housing.csv' not found.")
     st.stop()
 
-df = pd.read_csv("Housing.csv")
+df = pd.read_csv("your_project_folder/Housing.csv")
 st.success("✅ File loaded successfully!")
 import streamlit as st
 import pandas as pd
