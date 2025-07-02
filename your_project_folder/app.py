@@ -5,7 +5,7 @@ import pandas as pd
 st.write("📂 Current directory:", os.getcwd())
 st.write("📄 Files:", os.listdir())
 
-if not os.path.exists("Housing.csv"):
+if not os.path.exists("your_project_folder/Housing.csv"):
     st.error("❌ File 'Housing.csv' not found.")
     st.stop()
 
