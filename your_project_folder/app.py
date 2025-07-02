@@ -22,7 +22,7 @@ import os
 # ----------------------
 # Train & Save Model (run once if model doesn't exist)
 # ----------------------
-MODEL_PATH = "housing_model.pkl"
+MODEL_PATH = "your_project_folder/housing_model.pkl"
 
 if not os.path.exists(MODEL_PATH):
     st.info("Training model for the first time...")
